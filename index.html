@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do List</h1>
+
+    <!-- Task input form -->
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter your task">
+      <input type="date" id="date-input">
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Filter input -->
+    <div class="filter">
+      <input type="text" id="filter-input" placeholder="Filter tasks...">
+    </div>
+
+    <!-- Where the tasks will appear -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

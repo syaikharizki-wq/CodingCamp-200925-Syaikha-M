@@ -1,0 +1,72 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;   /* Simple clean font */
+  background: #2d2d51;              /* Light gray background */
+  display: flex;
+  justify-content: center;          /* Center the content horizontally */
+  padding: 20px;
+}
+
+/* The main box that holds everything */
+.container {
+  background: rgb(40, 88, 96);
+  padding: 20px;
+  border-radius: 8px;               /* Rounded corners */
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow around */
+}
+
+/* Form layout for task input */
+form {
+  display: flex;
+  gap: 10px;                        /* Space between inputs */
+  margin-bottom: 15px;
+}
+
+/* Style for text and date inputs */
+input[type="text"],
+input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #b0d5de;           /* Gray border */
+  border-radius: 4px;
+}
+
+/* The Add button */
+button {
+  padding: 8px 12px;
+  background-color: #425f64;        /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1d1342;        /* Darker green on hover */
+}
+
+/* The To-Do list container */
+#todo-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+}
+
+/* Each task item */
+#todo-list li {
+  display: flex;
+  justify-content: space-between;   /* Space between text and delete button */
+  background: #eee;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* The Delete button inside the task item */
+#todo-list li button {
+  background-color: #dc3545;        /* Red color */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+#todo-list li button:hover {
+  background-color: #c82333;        /* Darker red on hover */
+}
